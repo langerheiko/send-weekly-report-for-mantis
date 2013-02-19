@@ -1,0 +1,11 @@
+<?php
+
+$s_plugin_SendWeeklyReport_weekly_report = 'Weekly Report';
+$s_plugin_SendWeeklyReport_weekly_report_body_text = '<p>Hello @all,<br /><br />this is your weekly report sent by Mantis Bugtracker.<br /><br />Kind Regards,<br />MantisBT-Admin<p>';
+$s_plugin_SendWeeklyReport_weekly_report_bugs_open = 'Open Bugs';
+$s_plugin_SendWeeklyReport_weekly_report_bugs_done = 'Done Bugs';
+$s_plugin_SendWeeklyReport_weekly_report_bugs_done_last_week = 'Done Bugs (last week)';
+$s_plugin_SendWeeklyReport_weekly_report_week_no = 'week no.';
+$s_plugin_SendWeeklyReport_weekly_report_open = 'open';
+$s_plugin_SendWeeklyReport_weekly_report_done = 'done';
+$s_plugin_SendWeeklyReport_weekly_report_done_last_week = 'done last week';
