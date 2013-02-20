@@ -88,7 +88,7 @@ foreach($users_to_languages as $language => $value) {
 	//query mantis database
 	if (db_connect( false, config_get_global('hostname'), config_get_global('db_username'), config_get_global('db_password'), config_get_global('database_name'))){
 		$rs = db_query('SELECT m.id, severity, priority, u.username as assigned, m.status, resolution, mp.name as project, mc.name as category, summary, m.date_submitted, m.due_date, m.last_updated 
-	FROM mantis_bug_table m LEFT JOIN mantis_user_table u ON (u.id=m.handler_id) JOIN mantis_category_table mc ON (mc.id=m.category_id AND mc.project_id=m.project_id) JOIN mantis_project_table mp ON (m.project_id=mp.id)
+	FROM mantis_bug_table m LEFT JOIN mantis_user_table u ON (u.id=m.handler_id) LEFT JOIN mantis_category_table mc ON (mc.id=m.category_id AND mc.project_id=m.project_id) JOIN mantis_project_table mp ON (m.project_id=mp.id)
 	ORDER BY m.id ASC');
 	
 		//print_r(db_fetch_array($rs));
