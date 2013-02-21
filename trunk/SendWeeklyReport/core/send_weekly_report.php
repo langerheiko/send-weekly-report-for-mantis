@@ -96,7 +96,7 @@ foreach($users_to_languages as $language => $value) {
 		do {
 			$result = db_fetch_array($rs);
 			if($result !== false) {
-				if($result['status'] >= 80) {
+				if($result['status'] >= config_get('bug_resolved_status_threshold')) {
 					if($result['last_updated'] > strtotime('-1 week')) $rows_done[] = $result;
 				} else {
 					$rows_open[] = $result;
