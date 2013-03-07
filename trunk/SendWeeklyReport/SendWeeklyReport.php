@@ -6,7 +6,7 @@ Class SendWeeklyReportPlugin extends MantisPlugin {
 		$this->description 	= 'Send a weekly report by email to specified users.';
 		$this->page		= 'config';
 
-		$this->version		= '0.1';
+		$this->version		= '0.1.1';
 		$this->requires		= array('MantisCore' => '1.2.14');
 		
 		$this->author		= 'eCola GmbH, Heiko Schneider-Lange';
